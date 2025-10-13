@@ -13,20 +13,47 @@
         <h1 class="logo">S.N.M.</h1>
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="dashboard.html">Pedidos Atuais</a></li>
+                <li><a href="dashboard.html" class="active">Pedidos Atuais</a></li>
                 <li><a href="historico.html">Histórico de Pedidos</a></li>
                 <li><a href="cardapio.html">Gerenciar Cardápio</a></li>
                 <li><a href="relatorios.html">Relatórios</a></li>
-                <li><a href="delivery.html">Gestão de Entregas</a></li> <li><a href="index.html">Sair</a></li>
+                <li><a href="delivery.html">Gestão de Entregas</a></li>
+                <li><a href="index.html">Sair</a></li>
             </ul>
         </nav>
     </aside>
 
     <main class="main-content">
-        <h2>Novos Pedidos</h2>
+        <div class="page-header">
+            <h2>Novos Pedidos</h2>
+            <button id="lancar-pedido-btn" class="btn btn-primary">Lançar Pedido</button>
+        </div>
+        
         <div id="orders-container" class="orders-grid">
             </div>
     </main>
+
+    <div id="manual-order-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Lançar Pedido Manual</h3>
+                <button id="close-modal-btn" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="input-group">
+                        <label for="customer-name">Nome do Cliente</label>
+                        <input type="text" id="customer-name" placeholder="Cliente do balcão">
+                    </div>
+                    <div class="input-group">
+                        <label for="order-items">Itens do Pedido</label>
+                        <textarea id="order-items" rows="4" placeholder="Ex: 1x Açaí 500ml, 1x Ad: Banana, 1x Ad: Leite em Pó"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Lançar e Imprimir</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="dashboard.js"></script>
 </body>

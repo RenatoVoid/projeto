@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Dados - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="perfil-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Sorvete Na Montanha</a>
+            <nav>
+                <a href="cardapio.html" class="nav-button">Cardápio</a>
+                <a href="carrinho.html" class="cart-icon">🛒<span id="cart-count">0</span></a>
+                <a href="index.html" class="logout-button">Sair</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <aside class="profile-sidebar">
+            <h3>Olá, Renato!</h3>
+            <ul>
+                <li><a href="perfil.html">Meus Pedidos</a></li>
+                <li><a href="perfil-enderecos.html">Meus Endereços</a></li>
+                <li><a href="perfil-dados.html" class="active">Meus Dados</a></li>
+            </ul>
+        </aside>
+
+        <section class="profile-content">
+            <h2>Meus Dados</h2>
+            <p>Gerencie suas informações pessoais e de acesso.</p>
+
+            <form class="profile-form">
+                <div class="form-section">
+                    <h4>Informações da Conta</h4>
+                    <div class="input-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" value="Renato Oliveira">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" value="renato@gmail.com" disabled>
+                        <small>O e-mail não pode ser alterado.</small>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4>Alterar Senha</h4>
+                    <div class="input-group">
+                        <label for="current-password">Senha Atual</label>
+                        <input type="password" id="current-password">
+                    </div>
+                    <div class="input-group">
+                        <label for="new-password">Nova Senha</label>
+                        <input type="password" id="new-password">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirmar Nova Senha</label>
+                        <input type="password" id="confirm-password">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

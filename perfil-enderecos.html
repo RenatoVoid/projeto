@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Endereços - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="perfil-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Sorvete Na Montanha</a>
+            <nav>
+                <a href="cardapio.html" class="nav-button">Cardápio</a>
+                <a href="carrinho.html" class="cart-icon">🛒<span id="cart-count">0</span></a>
+                <a href="index.html" class="logout-button">Sair</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <aside class="profile-sidebar">
+            <h3>Olá, Renato!</h3>
+            <ul>
+                <li><a href="perfil.html">Meus Pedidos</a></li>
+                <li><a href="perfil-enderecos.html" class="active">Meus Endereços</a></li>
+                <li><a href="perfil-dados.html">Meus Dados</a></li>
+            </ul>
+        </aside>
+
+        <section class="profile-content">
+            <div class="page-header">
+                <h2>Meus Endereços</h2>
+                <button class="btn btn-primary">Adicionar Novo Endereço</button>
+            </div>
+            <p>Gerencie aqui seus endereços para entrega.</p>
+
+            <div class="address-cards-container">
+                <div class="address-card primary">
+                    <div class="card-header">
+                        <h4>Casa</h4>
+                        <span class="status">Principal</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Rua das Flores, 123, Capivari</p>
+                        <p>Campos do Jordão, SP</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Editar</a>
+                        <a href="#">Excluir</a>
+                    </div>
+                </div>
+                <div class="address-card">
+                    <div class="card-header">
+                        <h4>Trabalho</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Av. das Hortênsias, 45, Jaguaribe</p>
+                        <p>Campos do Jordão, SP</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#">Editar</a>
+                        <a href="#">Excluir</a>
+                        <a href="#" class="set-primary">Tornar Principal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

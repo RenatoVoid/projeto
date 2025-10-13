@@ -12,12 +12,14 @@
 <body>
     <main class="checkout-container">
         <div class="customer-details">
+            <a href="carrinho.html" class="back-to-cart-btn">&larr; Voltar para o Carrinho</a>
+
             <h2>Quase lá!</h2>
             <p>Preencha seus dados para concluir o pedido.</p>
             <form id="checkout-form">
                 <div class="input-group">
                     <label for="name">Seu Nome</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" value="Renato de Oliveira Moreira" required>
                 </div>
                 <div class="input-group">
                     <label for="address">Endereço de Entrega</label>
@@ -25,16 +27,15 @@
                 </div>
                 <div class="input-group">
                     <label for="phone">Telefone (WhatsApp)</label>
-                    <input type="tel" id="phone" required>
+                    <input type="tel" id="phone" value="(12) 98765-4321" required>
                 </div>
                 <div class="input-group">
                     <label>Forma de Pagamento</label>
-                    <div class="input-group">
-    <div class="payment-options">
-        <label><input type="radio" name="payment" value="pix" checked> PIX</label>
-        <label><input type="radio" name="payment" value="card"> Cartão na Entrega</label>
-        <label><input type="radio" name="payment" value="dinheiro"> Dinheiro</label> </div>
-</div>
+                    <div class="payment-options">
+                        <label><input type="radio" name="payment" value="pix" checked> PIX</label>
+                        <label><input type="radio" name="payment" value="card"> Cartão na Entrega</label>
+                        <label><input type="radio" name="payment" value="dinheiro"> Dinheiro</label>
+                    </div>
                 </div>
                 <button type="submit" class="confirm-btn">Confirmar Pedido</button>
             </form>

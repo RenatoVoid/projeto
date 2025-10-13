@@ -34,3 +34,33 @@ body, html { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; backgroun
 .summary-item .price { color: #555; font-weight: bold; }
 
 .summary-total { display: flex; justify-content: space-between; font-size: 1.5em; font-weight: bold; color: #4a2c5a; border-top: 1px solid #ccc; padding-top: 20px; margin-top: 20px; }
+
+/* Adicione no final de checkout-style.css */
+
+.back-to-cart-btn {
+    display: inline-block;
+    margin-bottom: 30px; /* Espaço antes do título */
+    color: #6a4c9c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.back-to-cart-btn:hover {
+    text-decoration: underline;
+}
+
+/* Adicione no final de checkout-style.css */
+
+.back-to-cart-btn {
+    display: inline-block;
+    margin-bottom: 30px; /* Espaço antes do título */
+    color: #6a4c9c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.back-to-cart-btn:hover {
+    text-decoration: underline;
+}

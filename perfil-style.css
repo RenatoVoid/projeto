@@ -1,0 +1,260 @@
+/* Estilos Gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Padrão (adaptado) */
+header {
+    background-color: white;
+    padding: 15px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #eee;
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo { font-family: 'Playfair Display', serif; font-size: 1.5em; color: #4a2c5a; text-decoration: none; font-weight: 700; }
+nav { display: flex; align-items: center; gap: 20px; }
+.nav-button, .logout-button { text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: all 0.3s ease; }
+.nav-button { color: #333; }
+.logout-button { border: 1px solid #e63946; color: #e63946; }
+.logout-button:hover { background-color: #e63946; color: white; }
+.cart-icon { font-size: 1.8em; position: relative; cursor: pointer; color: #333; text-decoration: none;}
+#cart-count { position: absolute; top: -5px; right: -10px; background-color: #e63946; color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.6em; }
+
+/* Layout da Página de Perfil */
+.profile-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 260px 1fr; /* Sidebar e conteúdo */
+    gap: 30px;
+}
+
+/* Sidebar do Perfil */
+.profile-sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+.profile-sidebar h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+.profile-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.profile-sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+.profile-sidebar a:hover {
+    background-color: #f4f4f4;
+    color: #4a2c5a;
+}
+.profile-sidebar a.active {
+    background-color: #6a4c9c;
+    color: white;
+}
+
+/* Conteúdo do Perfil */
+.profile-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.profile-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-top: 0;
+}
+.profile-content p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Tabela de Histórico de Pedidos */
+.order-history-table {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead tr {
+    text-align: left;
+}
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+th {
+    color: #555;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+td {
+    font-size: 0.95em;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-align: center;
+}
+.status.status-delivered {
+    background-color: #d4edda;
+    color: #155724;
+}
+.status.status-canceled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Adicione no final de perfil-style.css */
+
+/* --- ESTILOS PARA A PÁGINA DE ENDEREÇOS --- */
+
+/* Cabeçalho da página de conteúdo */
+.profile-content .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Botões genéricos (reutilizados do painel admin) */
+.btn { border: none; padding: 10px 20px; border-radius: 5px; font-weight: 700; cursor: pointer; transition: background-color 0.3s ease; font-size: 0.9em; }
+.btn-primary { background-color: #6a4c9c; color: white; }
+.btn-primary:hover { background-color: #4a2c5a; }
+
+
+/* Container dos cards de endereço */
+.address-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.address-card {
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-card.primary {
+    border-left: 4px solid #6a4c9c;
+}
+
+.address-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+.address-card .card-header h4 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.address-card .card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+.address-card .card-body p {
+    margin: 0 0 5px 0;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.address-card .card-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 20px;
+}
+.address-card .card-footer a {
+    color: #6a4c9c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+.address-card .card-footer a.set-primary {
+    margin-left: auto; /* Empurra o link para a direita */
+}
+
+/* Adicione no final de perfil-style.css */
+
+/* --- ESTILOS PARA A PÁGINA DE DADOS PESSOAIS --- */
+
+.profile-form {
+    margin-top: 30px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.form-section h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+.input-group input {
+    width: 100%;
+    max-width: 400px; /* Limita a largura dos campos */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.input-group input:disabled {
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+}
+.input-group small {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 5px;
+}
