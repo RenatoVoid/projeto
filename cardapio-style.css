@@ -1,0 +1,189 @@
+/* Estilos Gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: white;
+    padding: 15px 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #eee;
+}
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #4a2c5a;
+    text-decoration: none;
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.login-button {
+    background-color: transparent;
+    border: 1px solid #6a4c9c;
+    color: #6a4c9c;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.login-button:hover {
+    background-color: #6a4c9c;
+    color: white;
+}
+.cart-icon {
+    font-size: 1.8em;
+    position: relative;
+    cursor: pointer;
+}
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e63946;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+/* --- Estrutura Geral do Cardápio --- */
+.cardapio-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px 40px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #4a2c5a;
+    font-size: 2.8em;
+    margin-bottom: 50px;
+}
+
+.menu-section {
+    margin-bottom: 50px;
+}
+
+.menu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.section-subtitle {
+    color: #777;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* --- ESTILO DO ITEM INDIVIDUAL (Onde estava o erro) --- */
+.menu-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc; /* Linha para separar os itens */
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+}
+
+.item-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4a2c5a;
+}
+
+.item-description {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+    max-width: 70%; /* Para não ficar muito longo */
+}
+
+.add-to-cart-btn {
+    background-color: #8a6db3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+.add-to-cart-btn:hover {
+    background-color: #6a4c9c;
+}
+
+/* --- GRID PARA OS ADICIONAIS --- */
+.adicionais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+.adicionais-grid span {
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    color: #555;
+    border: 1px solid #eee;
+}
+/* SUBSTITUA O ESTILO DOS ADICIONAIS POR ESTE */
+
+/* --- GRID PARA OS ADICIONAIS --- */
+.adicionais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+/* Agora estilizando os botões dentro do grid */
+.adicionais-grid button {
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    color: #555;
+    border: 1px solid #eee;
+    font-family: 'Roboto', sans-serif; /* Garante a mesma fonte */
+    text-align: left; /* Alinha o texto à esquerda */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.adicionais-grid button:hover {
+    background-color: #e9e9e9;
+    border-color: #ccc;
+    transform: translateY(-2px); /* Efeito de levantar ao passar o mouse */
+}

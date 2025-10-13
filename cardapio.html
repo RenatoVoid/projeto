@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="cardapio-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Sorvete Na Montanha</a>
+            <nav>
+                <a href="login.html" class="login-button">Login / Cadastre-se</a>
+                <a href="carrinho.html" class="cart-icon">
+                🛒
+                <span id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cardapio-container">
+        <h1>Nosso Cardápio</h1>
+
+        <section class="menu-section">
+            <h2>Tigelas de Açaí</h2>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Açaí Tradicional 300ml</span>
+                    <span class="item-price">R$ 12,00</span>
+                </div>
+                <p class="item-description">Açaí puro batido com banana. Monte com seus adicionais preferidos.</p>
+                <button class="add-to-cart-btn" data-name="Açaí Tradicional 300ml" data-price="12.00">Adicionar ao Carrinho</button>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Açaí Tradicional 500ml</span>
+                    <span class="item-price">R$ 16,00</span>
+                </div>
+                <p class="item-description">Açaí puro batido com banana. Monte com seus adicionais preferidos.</p>
+                <button class="add-to-cart-btn" data-name="Açaí Tradicional 500ml" data-price="16.00">Adicionar ao Carrinho</button>
+            </div>
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Açaí Tradicional 700ml</span>
+                    <span class="item-price">R$ 20,00</span>
+                </div>
+                <p class="item-description">Açaí puro batido com banana. Monte com seus adicionais preferidos.</p>
+                <button class="add-to-cart-btn" data-name="Açaí Tradicional 700ml" data-price="20.00">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <section class="menu-section">
+    <h2>Adicionais</h2>
+    <p class="section-subtitle">Turbine o seu açaí! (Preço por porção)</p>
+    <div class="adicionais-grid">
+        <button class="add-to-cart-btn" data-name="Adicional: Banana" data-price="2.00">Frutas: Banana (+R$ 2,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Morango" data-price="3.00">Frutas: Morango (+R$ 3,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Kiwi" data-price="3.00">Frutas: Kiwi (+R$ 3,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Manga" data-price="2.00">Frutas: Manga (+R$ 2,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Granola" data-price="2.00">Cereais: Granola (+R$ 2,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Aveia" data-price="1.50">Cereais: Aveia (+R$ 1,50)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Leite em Pó" data-price="2.00">Cremes: Leite em Pó (+R$ 2,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Leite Condensado" data-price="2.00">Cremes: Leite Condensado (+R$ 2,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Creme de Avelã" data-price="4.00">Cremes: Creme de Avelã (+R$ 4,00)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Paçoca" data-price="1.50">Outros: Paçoca (+R$ 1,50)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Coco Ralado" data-price="1.50">Outros: Coco Ralado (+R$ 1,50)</button>
+        <button class="add-to-cart-btn" data-name="Adicional: Confete" data-price="2.50">Outros: Confete (+R$ 2,50)</button>
+    </div>
+</section>
+
+    </main>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

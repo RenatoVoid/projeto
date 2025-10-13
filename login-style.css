@@ -1,0 +1,115 @@
+/* Estilos Gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Página de login com imagem de fundo */
+.login-page {
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1615438612841-2743d54354a8?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do formulário */
+.login-container {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.back-link {
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #6a4c9c;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #4a2c5a;
+    margin: 0 0 10px 0;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Grupos de input (label + campo) */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Botão principal de login */
+.login-main-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6a4c9c;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-main-button:hover {
+    background-color: #4a2c5a;
+}
+
+/* Links extras */
+.extra-links {
+    margin-top: 25px;
+}
+
+.extra-links a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+.extra-links a strong {
+    color: #6a4c9c;
+    font-weight: bold;
+}

@@ -1,0 +1,22 @@
+/* Arquivo: carrinho-style.css */
+body, html { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; background-color: #f9f9f9; }
+header { background-color: white; padding: 15px 10%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-bottom: 1px solid #eee; }
+.header-container { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'Playfair Display', serif; font-size: 1.5em; color: #4a2c5a; text-decoration: none; font-weight: 700; }
+.login-button { background-color: #6a4c9c; border: 1px solid #6a4c9c; color: white; padding: 8px 16px; border-radius: 5px; text-decoration: none; transition: all 0.3s ease; }
+.login-button:hover { background-color: #4a2c5a; }
+
+.carrinho-container { max-width: 700px; margin: 40px auto; padding: 40px; background-color: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+h1 { font-family: 'Playfair Display', serif; text-align: center; color: #4a2c5a; font-size: 2.8em; margin-bottom: 40px; }
+
+.cart-item { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; }
+.item-name { font-weight: bold; color: #333; }
+.item-price { font-weight: bold; color: #4a2c5a; }
+#cart-empty-message { text-align: center; color: #777; padding: 40px 0; }
+
+.cart-summary { margin-top: 30px; padding-top: 20px; border-top: 2px solid #333; display: flex; justify-content: space-between; align-items: center; font-size: 1.5em; }
+.cart-summary h3 { margin: 0; font-family: 'Playfair Display', serif; font-size: 1em; }
+#cart-total { font-weight: bold; color: #4a2c5a; }
+
+.checkout-btn { display: block; width: 100%; padding: 15px; margin-top: 30px; border: none; background-color: #2a9d8f; color: white; font-size: 1.2em; font-weight: bold; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }
+.checkout-btn:hover { background-color: #268074; }

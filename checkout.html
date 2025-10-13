@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="checkout-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="checkout-container">
+        <div class="customer-details">
+            <h2>Quase lá!</h2>
+            <p>Preencha seus dados para concluir o pedido.</p>
+            <form id="checkout-form">
+                <div class="input-group">
+                    <label for="name">Seu Nome</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Endereço de Entrega</label>
+                    <input type="text" id="address" placeholder="Rua, Número, Bairro" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Telefone (WhatsApp)</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="input-group">
+                    <label>Forma de Pagamento</label>
+                    <div class="input-group">
+    <div class="payment-options">
+        <label><input type="radio" name="payment" value="pix" checked> PIX</label>
+        <label><input type="radio" name="payment" value="card"> Cartão na Entrega</label>
+        <label><input type="radio" name="payment" value="dinheiro"> Dinheiro</label> </div>
+</div>
+                </div>
+                <button type="submit" class="confirm-btn">Confirmar Pedido</button>
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            <div id="summary-items">
+                </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span id="summary-total">R$ 0,00</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
