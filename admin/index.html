@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Restrito - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-login-page">
+        <div class="login-box">
+            <h1 class="logo">Sorvete Na Montanha</h1>
+            <h2>Painel do Funcionário</h2>
+            <form id="admin-login-form">
+                <div class="input-group">
+                    <label for="user">Usuário</label>
+                    <input type="text" id="user" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('admin-login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // 1. Pega os valores digitados pelo usuário
+            const user = document.getElementById('user').value;
+            const password = document.getElementById('password').value;
+
+            // 2. Verifica se o usuário é "admin" E a senha é "123"
+            if (user === 'admin' && password === '123') {
+                // Se estiverem corretos, redireciona para o painel
+                alert('Login bem-sucedido!');
+                window.location.href = 'dashboard.html';
+            } else {
+                // Se estiverem errados, mostra um alerta de erro
+                alert('Usuário ou senha incorretos!');
+            }
+        });
+    </script>
+</body>
+</html>

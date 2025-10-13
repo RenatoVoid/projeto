@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Cardápio - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <h1 class="logo">S.N.M.</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html">Pedidos Atuais</a></li>
+                <li><a href="historico.html">Histórico de Pedidos</a></li>
+                <li><a href="cardapio.html" class="active">Gerenciar Cardápio</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h2>Gerenciar Cardápio</h2>
+            <button class="btn btn-primary">Adicionar Novo Item</button>
+        </div>
+
+        <div class="content-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Açaí Tradicional 300ml</td>
+                        <td>Tigelas de Açaí</td>
+                        <td>R$ 12,00</td>
+                        <td>
+                            <button class="btn btn-secondary">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Açaí Tradicional 500ml</td>
+                        <td>Tigelas de Açaí</td>
+                        <td>R$ 16,00</td>
+                        <td>
+                            <button class="btn btn-secondary">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adicional: Morango</td>
+                        <td>Adicionais</td>
+                        <td>R$ 3,00</td>
+                        <td>
+                            <button class="btn btn-secondary">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adicional: Granola</td>
+                        <td>Adicionais</td>
+                        <td>R$ 2,00</td>
+                        <td>
+                            <button class="btn btn-secondary">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>

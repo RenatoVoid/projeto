@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Entregas - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <h1 class="logo">S.N.M.</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html">Pedidos Atuais</a></li>
+                <li><a href="historico.html">Histórico de Pedidos</a></li>
+                <li><a href="cardapio.html">Gerenciar Cardápio</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="delivery.html" class="active">Gestão de Entregas</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h2>Gestão de Entregas</h2>
+        </div>
+
+        <div class="delivery-list-full">
+            <div class="delivery-card">
+                <div class="card-header">
+                    <span class="order-id">Pedido #101</span>
+                    <span class="status-badge status-delivery">Em Rota</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Entregador:</strong> João Silva</p>
+                    <p><strong>Cliente:</strong> Renato Almeida</p>
+                    <p class="customer-address">Rua das Flores, 123, Capivari</p>
+                </div>
+            </div>
+            <div class="delivery-card">
+                <div class="card-header">
+                    <span class="order-id">Pedido #099</span>
+                    <span class="status-badge status-delivery">Em Rota</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Entregador:</strong> Maria Souza</p>
+                    <p><strong>Cliente:</strong> Ana Julia</p>
+                    <p class="customer-address">Av. das Hortênsias, 45, Jaguaribe</p>
+                </div>
+            </div>
+             <div class="delivery-card">
+                <div class="card-header">
+                    <span class="order-id">Pedido #098</span>
+                    <span class="status-badge status-completed">Entregue</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Entregador:</strong> João Silva</p>
+                    <p><strong>Cliente:</strong> Carlos Pereira</p>
+                    <p class="customer-address">Alameda das Cerejeiras, 78</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

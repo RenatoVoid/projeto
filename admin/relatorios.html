@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <h1 class="logo">S.N.M.</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html">Pedidos Atuais</a></li>
+                <li><a href="historico.html">Histórico de Pedidos</a></li>
+                <li><a href="cardapio.html">Gerenciar Cardápio</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="delivery.html">Gestão de Entregas</a></li> <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h2>Relatórios de Desempenho</h2>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <h4>Vendas Totais (Hoje)</h4>
+                <p>R$ 785,50</p>
+                <span class="kpi-change positive">+5% vs ontem</span>
+            </div>
+            <div class="kpi-card">
+                <h4>Total de Pedidos</h4>
+                <p>32</p>
+                <span class="kpi-change positive">+2 vs ontem</span>
+            </div>
+            <div class="kpi-card">
+                <h4>Ticket Médio</h4>
+                <p>R$ 24,54</p>
+                <span class="kpi-change negative">-1.5% vs ontem</span>
+            </div>
+            <div class="kpi-card">
+                <h4>Item Mais Vendido</h4>
+                <p>Açaí 500ml</p>
+                <span class="kpi-change">Granola em 2º</span>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-container">
+                <h3>Vendas por Hora</h3>
+                <div class="bar-chart-wrapper">
+                    <div class="y-axis">
+                        <span>R$200</span>
+                        <span>R$150</span>
+                        <span>R$100</span>
+                        <span>R$50</span>
+                        <span>R$0</span>
+                    </div>
+                    <div class="chart-bar-holder">
+                        <div class="bar" style="height: 40%;" data-value="R$ 80"><span>12h</span></div>
+                        <div class="bar" style="height: 60%;" data-value="R$ 120"><span>13h</span></div>
+                        <div class="bar" style="height: 80%;" data-value="R$ 160"><span>14h</span></div>
+                        <div class="bar" style="height: 75%;" data-value="R$ 150"><span>15h</span></div>
+                        <div class="bar" style="height: 90%;" data-value="R$ 180"><span>16h</span></div>
+                        <div class="bar" style="height: 65%;" data-value="R$ 130"><span>17h</span></div>
+                        <div class="bar" style="height: 50%;" data-value="R$ 100"><span>18h</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Itens Mais Pedidos (Categoria)</h3>
+                <div class="chart-pie-holder">
+                    <div class="pie-chart"></div>
+                    <ul class="pie-legend">
+                        <li><span class="dot açaí"></span> Tigelas de Açaí</li>
+                        <li><span class="dot adicionais"></span> Adicionais</li>
+                        <li><span class="dot bebidas"></span> Bebidas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>

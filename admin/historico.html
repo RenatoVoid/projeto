@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Pedidos - Sorvete Na Montanha</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <h1 class="logo">S.N.M.</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html">Pedidos Atuais</a></li>
+                <li><a href="historico.html">Histórico de Pedidos</a></li>
+                <li><a href="cardapio.html">Gerenciar Cardápio</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="delivery.html">Gestão de Entregas</a></li> <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h2>Histórico de Pedidos</h2>
+        <div id="history-container" class="orders-grid">
+            <div class="order-card status-completed">
+                <div class="order-card-header"><h3>Pedido #098</h3><span class="order-time">Ontem, 18:45</span></div>
+                <div class="order-card-body"><p><strong>Cliente:</strong> Ana Julia</p></div>
+                <div class="order-card-footer"><span class="order-total">Total: R$ 27,00</span><span class="status-badge">Concluído</span></div>
+            </div>
+            <div class="order-card status-canceled">
+                <div class="order-card-header"><h3>Pedido #097</h3><span class="order-time">Ontem, 15:21</span></div>
+                <div class="order-card-body"><p><strong>Cliente:</strong> Carlos Pereira</p></div>
+                <div class="order-card-footer"><span class="order-total">Total: R$ 12,00</span><span class="status-badge">Cancelado</span></div>
+            </div>
+             </div>
+    </main>
+
+</body>
+</html>
