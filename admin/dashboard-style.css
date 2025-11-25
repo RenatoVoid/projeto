@@ -757,3 +757,17 @@ td .btn {
 .modal-body textarea {
     resize: vertical;
 }
+
+/* Adicione no final de admin/dashboard-style.css */
+
+/* Estilo para o dropdown (select) no modal */
+.modal-body select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    background-color: white;
+}
